@@ -2,8 +2,8 @@ package com;
 
 import java.util.ArrayList;
 
-public class Sorter {
-    public <E extends Comparable<E>> ArrayList<E> bubbleSort(ArrayList<E> lst) {
+public class Sorter <E extends Comparable<E>>  {
+    public ArrayList<E> bubbleSort(ArrayList<E> lst) {
         for (int i = 0; i < lst.size(); i++) {
             // index j is always i + 1. j iteration becomes shorter because sorted elements build up at end of list. \
             // no point in checking already sorted elements
